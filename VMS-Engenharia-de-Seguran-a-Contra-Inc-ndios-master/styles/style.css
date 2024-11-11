@@ -1,0 +1,316 @@
+/*
+#232526
+#F2C12E
+#F28C0F
+#F25C05
+#F28F79
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  */
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  h1{
+    font-family: 'Mynerve', cursive;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+  }
+
+
+    
+    h2{
+    
+    font-family: 'Marhey', cursive;
+    text-shadow: 4px 4px 6px #464646;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+  }
+
+
+
+/*_______BOTÃO ORÇAMENTO_______*/
+
+div.orçamento a{
+  font-size: max(16px, 1.8vw);
+  color:#fff;
+  text-decoration: none;
+  padding: 15px 60px;
+  border-radius: 50px;
+  font-weight: 600;
+  background: linear-gradient(rgb(230, 2, 2)0%, rgb(202, 45, 45)60%, rgba(26, 23, 23, 0.9)100%);
+  
+  display: inline-block;
+  
+  /*animation-name: HeaderA-moverParacima;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  transition: .3s ease-in-out;*/
+  
+  }
+  
+  div.orçamento a:hover{
+   opacity: .8;
+  }
+
+
+
+/*_____________________________*/
+/*  ELEMENTOS DO NOSSO HEADER  */
+/*_____________________________*/
+header{
+    max-width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+
+
+
+
+/*_____________________________*/
+/*           NAVEBAR          */
+/*_____________________________*/
+header nav#nav-esq{
+  width: 100%;
+  height: 150px;
+  background-color: #232526;
+
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+header nav#nav-esq div#logo{
+  width: 100px;
+  height: 120px;
+  margin-left: 5rem;
+}
+
+header nav#nav-esq div#logo img{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+
+/*_____________________________*/
+/*       MENU HAMBURGUER       */
+/*_____________________________*/
+
+header nav#nav-esq ul#icone-menu{
+  display: none;
+}
+
+header nav#nav-esq ul#icone-menu li{
+  list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu li ion-icon{
+  font-size: 70px;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+
+
+/*__________________________*/
+/*           MENU           */
+/*__________________________*/
+header nav#nav-esq ul#menu-principal{
+  margin-left: 5rem;
+
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+header nav#nav-esq ul#menu-principal li{
+  list-style: none;
+  margin-right: 3rem;
+}
+
+header nav#nav-esq ul#menu-principal li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 110%;
+  text-shadow: 4px 6px 10px #000;
+  padding-bottom: 10px;
+  transition: .3s ease-in-out;
+}
+ 
+header nav#nav-esq ul#menu-principal li a:hover{
+  border-bottom: 1px solid #fff;
+  opacity: .6;
+}
+
+
+
+/*___________ORÇAMENTO__________*/
+
+header div.orçamento{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+header div.orçamento h1{
+  color: #7e0000;
+
+  /*animation-name: HeaderH1-moverParaDireita;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;*/
+
+}
+
+header div.orçamento{
+  color: #f5f5f5;
+
+  margin-bottom: 55px;
+   
+  /*animation-name: HeaderH1-moverParaEsquerda;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;*/
+}
+
+
+
+  
+/*_____________________________*/
+/*            SLIDER           */
+/*_____________________________*/
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .firtst{
+  margin-left: -75%;
+}
+
+
+.navigation-auto div{
+  border:2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .manual-btn1{
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .manual-btn2{
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .manual-btn3{
+  background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .manual-btn4{
+  background-color: #fff;
+}
