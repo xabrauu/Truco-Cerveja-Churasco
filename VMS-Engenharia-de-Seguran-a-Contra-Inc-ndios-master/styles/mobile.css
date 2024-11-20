@@ -1,0 +1,123 @@
+/*
+#232526
+#F2C12E
+#F28C0F
+#F25C05
+#F28F79
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  */
+
+
+
+/*_____________________________*/
+/*  ELEMENTOS DO NOSSO HEADER  */
+/*_____________________________*/
+@media screen and (max-width: 1200px) {
+      header{
+          background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaM.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+      }
+}
+
+@media screen and (max-width: 600px) {
+  header{
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaP.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+  }
+}
+
+
+
+/*___________NAVEBAR___________*/
+@media screen and (max-width: 1110px) {
+      header nav#nav-esq ul.menu-principal li a{
+        font-size: 90%;
+      }
+  
+}
+
+@media screen and (max-width: 970px) {
+
+    header nav#nav-esq ul.menu-principal li a {
+      margin-left: 1rem;
+    }
+
+
+    
+/*_______MENU HAMBURGUER_______*/
+    header nav#nav-esq{
+      justify-content: space-between;
+    }
+
+    header nav#nav-esq ul#icone-menu{
+      display: flex;
+    }
+
+    header nav#nav-esq ul#icone-menu li#menuX {
+      display: none;
+    }
+  
+header{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaP.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    justify-content: space-between;
+  }
+
+  header nav#nav-esq ul#icone-menu{
+    display: flex;
+  }
+
+  header nav#nav-esq ul#icone-menu {
+    display: flex;
+
+  }
+
+  header nav#nav-esq ul#icone-menu li#menuX {
+    display: none;
+  }
+
+
+
+  /*___________MENU___________*/
+  header nav#nav-esq ul#menu-principal{
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background: linear-gradient(rgb(230, 2, 2)0%, rgb(202, 45, 45)45%, rgba(0, 0, 0, 0.9)100%);
+    padding-top: .5rem;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    z-index: 999;
+    
+    display: none;
+  }
+  header nav#nav-esq ul#menu-principal li{
+    margin: .5rem;
+    margin-left: 1rem;
+  }
+
+  header nav#nav-esq ul#menu-principal li a{
+    font-size: 120%;
+  }
+
+}
