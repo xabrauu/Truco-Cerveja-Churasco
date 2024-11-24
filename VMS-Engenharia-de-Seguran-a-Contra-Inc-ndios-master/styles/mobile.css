@@ -1,0 +1,173 @@
+/*
+#232526
+#F2C12E
+#F28C0F
+#F25C05
+#F28F79
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  */
+
+
+
+/*_____________________________*/
+/*  ELEMENTOS DO NOSSO HEADER  */
+/*_____________________________*/
+@media screen and (max-width: 1200px) {
+      header{
+          /*background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaM.jpg');*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+      }
+}
+
+@media screen and (max-width: 600px) {
+  header{
+      /*background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaP.jpg');*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+  }
+}
+
+
+
+/*___________NAVEBAR___________*/
+@media screen and (max-width: 1110px) {
+      header nav#nav-esq ul.menu-principal li a{
+        font-size: 90%;
+      }
+  
+}
+
+@media screen and (max-width: 970px) {
+
+    header nav#nav-esq ul.menu-principal li a {
+      margin-left: 1rem;
+    }
+
+
+    
+/*_______MENU HAMBURGUER_______*/
+    header nav#nav-esq{
+      justify-content: space-between;
+    }
+
+    header nav#nav-esq ul#icone-menu{
+      display: flex;
+    }
+
+    header nav#nav-esq ul#icone-menu li#menuX {
+      display: none;
+    }
+  
+header{
+  /*background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)) ,url('../imagens/headerCapaP.jpg');*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    justify-content: space-between;
+  }
+
+  header nav#nav-esq ul#icone-menu{
+    display: flex;
+  }
+
+  header nav#nav-esq ul#icone-menu {
+    display: flex;
+
+  }
+
+  header nav#nav-esq ul#icone-menu li#menuX {
+    display: none;
+  }
+
+
+
+  /*___________MENU___________*/
+  header nav#nav-esq ul#menu-principal{
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background: linear-gradient(rgb(230, 2, 2)0%, rgb(202, 45, 45)45%, rgba(0, 0, 0, 0.9)100%);
+    padding-top: .5rem;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    z-index: 999;
+    
+    display: none;
+  }
+  header nav#nav-esq ul#menu-principal li{
+    margin: .5rem;
+    margin-left: 1rem;
+  }
+
+  header nav#nav-esq ul#menu-principal li a{
+    font-size: 120%;
+  }
+
+}
+/*--Footer--*/
+
+@media screen and (max-width: 600px) {
+  footer {
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 20px 10px; /* Adiciona espaço interno no rodapé */
+    background: #000000; /* Certifica que o fundo cobre toda a área */
+  }
+
+  #footer_content {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os elementos */
+    width: 100%; /* Faz o conteúdo ocupar toda a largura */
+  }
+
+  #footer_contacts,
+  #mapBox {
+    width: 90%; /* Reduz a largura dos itens para caberem melhor */
+    max-width: 400px; /* Limita o tamanho máximo */
+  }
+
+  #mapBox {
+    height: 150px; /* Reduz a altura do mapa */
+    margin: 0 auto; /* Centraliza o mapa */
+    border: 2px solid #A33A3C; /* (Opcional) Borda para dar destaque ao mapa */
+  }
+
+  #footer_contacts p {
+    word-break: break-word; /* Garante que textos longos, como e-mails, quebrem a linha */
+    margin-bottom: 10px; /* Espaçamento entre o texto e o próximo elemento */
+  }
+
+  footer {
+    min-height: 300px; /* Define uma altura mínima suficiente para acomodar o conteúdo */
+  }
+
+  #footer_social_midia {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones sociais */
+    gap: 10px; /* Reduz o espaçamento entre os ícones */
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha se necessário */
+  }
+
+  #footer_copyright {
+    margin-top: 20px; /* Espaço acima do texto de copyright */
+    font-size: 0.8rem; /* Reduz o tamanho do texto */
+  }
+}
